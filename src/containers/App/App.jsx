@@ -145,7 +145,7 @@ export class App extends Component {
             Software engineer at <AlfabankLink />
           </Description>
         </TextBlock>
-        <Copyright>Dots & rays by Tomislav Jakupec</Copyright>
+        <Copyright>Background by Tomislav Jakupec</Copyright>
         <Links>
           <SocietyLink href="https://vk.com/id33255365">
             <i className="fab fa-vk" />
