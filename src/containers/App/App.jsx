@@ -51,7 +51,7 @@ const Name = styled.h1`
 
 const Description = styled.p`
   margin: 4px;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 24px;
   background: #47ffd1; /* Old Browsers */
   background: -webkit-linear-gradient(left, #47ffd1, #174d32); /*Safari 5.1-6*/
@@ -137,7 +137,6 @@ export class App extends Component {
   render() {
     return (
       <Root>
-        <BackgroundShadow />
         <TextBlock>
           Hi, I'm @romarus
           <Name>Khisamutdinov Rinas</Name>
