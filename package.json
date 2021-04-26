@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
-  "homepage": "https://devromarus.github.io/romarus.github.io/",
+  "homepage": "http://khisamutdinov.ru",
   "dependencies": {
     "gh-pages": "3.1.0",
     "react": "17.0.1",
