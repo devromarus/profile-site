@@ -54,10 +54,10 @@ const Description = styled.p`
   font-weight: 300;
   font-size: 24px;
   background: #47ffd1; /* Old Browsers */
-  background: -webkit-linear-gradient(left, #47ffd1, #174d32); /*Safari 5.1-6*/
-  background: -o-linear-gradient(left, #47ffd1, #174d32); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(left, #47ffd1, #174d32); /*Fx 3.6-15*/
-  background: linear-gradient(to right, #47ffd1, #174d32); /*Standard*/
+  background: -webkit-linear-gradient(left, #47ffd1, #00ff99); /*Safari 5.1-6*/
+  background: -o-linear-gradient(left, #47ffd1, #00ff99); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(left, #47ffd1, #00ff99); /*Fx 3.6-15*/
+  background: linear-gradient(to right, #47ffd1, #00ff99); /*Standard*/
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
@@ -68,7 +68,7 @@ const Description = styled.p`
 
 const DescriptionLink = styled.a``;
 
-const Copyright = styled.p`
+const Copyright = styled.a`
   position: absolute;
   right: 32px;
   bottom: 32px;
@@ -84,6 +84,12 @@ const Copyright = styled.p`
 const AlfabankLink = () => (
   <DescriptionLink href="https://alfabank.ru" target="_blank" rel="noopener">
     alfabank.ru
+  </DescriptionLink>
+);
+
+const ResumeLink = () => (
+  <DescriptionLink href="http://resume.khisamutdinov.ru/" target="_blank" rel="noopener">
+    ⟶ resume
   </DescriptionLink>
 );
 
@@ -138,13 +144,16 @@ export class App extends Component {
     return (
       <Root>
         <TextBlock>
-          Hi, I'm @romarus
+          Hi, I'm
           <Name>Khisamutdinov Rinas</Name>
           <Description>
             Software engineer at <AlfabankLink />
           </Description>
+          <Description>
+            <ResumeLink /> 
+          </Description>
         </TextBlock>
-        <Copyright>Background by Tomislav Jakupec</Copyright>
+        <Copyright>Background image by Tomislav Jakupec</Copyright>
         <Links>
           <SocietyLink href="https://vk.com/id33255365">
             <i className="fab fa-vk" />
